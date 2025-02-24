@@ -1,2 +1,27 @@
+# Ignorar o banco de dados SQLite
+db.sqlite3
+
+# Ignorar o arquivo de log do Django
+django_debug.log
+
+# Outras configurações úteis para Django (opcional)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.coverage
+*.tox
+*.nox
+*.coverage.*
+*.hypothesis
+.env
+*.env
+*.venv
 /venv/
 /.idea/
