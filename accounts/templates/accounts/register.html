@@ -65,6 +65,15 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        .password-container {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -86,16 +95,31 @@
             <input type="email" name="email" id="email" required>
 
             <label for="password">Senha:</label>
-            <input type="password" name="password" id="password" required>
+            <div class="password-container">
+                <input type="password" name="password" id="password" required>
+                <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+            </div>
 
             <label for="confirm_password">Confirmar Senha:</label>
-            <input type="password" name="confirm_password" id="confirm_password" required>
+            <div class="password-container">
+                <input type="password" name="confirm_password" id="confirm_password" required>
+                <span class="toggle-password" onclick="togglePassword('confirm_password')">👁️</span>
+            </div>
 
             <button type="submit">Registrar</button>
         </form>
 
         <a href="{% url 'login' %}">Cancelar</a>
     </div>
+
+    <script>
+        // Função para alternar entre ocultar e mostrar a senha
+        function togglePassword(id) {
+            const passwordField = document.getElementById(id);
+            const passwordType = passwordField.type === "password" ? "text" : "password";
+            passwordField.type = passwordType;
+        }
+    </script>
 
 </body>
 </html>

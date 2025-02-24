@@ -56,7 +56,7 @@ def register_view(request):
             try:
                 # Verificar se o e-mail ou nome de usuário já existe
                 if User.objects.filter(username=name).exists():
-                    raise UserAlreadyExistsError("Este Nome já está cadastrado.")
+                    raise UserAlreadyExistsError("Este e-mail já está cadastrado.")
                 if User.objects.filter(email=email).exists():
                     raise UserAlreadyExistsError("Este e-mail já está em uso.")
 
