@@ -2,7 +2,8 @@
 db.sqlite3
 
 # Ignorar o arquivo de log do Django
-django_debug.log
+/django_debug.log
+/app/django_debug.log
 
 # Outras configurações úteis para Django (opcional)
 __pycache__/
