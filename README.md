@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ### 4️⃣ Configurar o banco de dados
 
 ```sh
-pytitncluhon manage.py migrate
+python manage.py makemigrations accounts
 ```
 
 ```sh
