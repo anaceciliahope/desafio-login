@@ -1,4 +1,6 @@
-# Django Login & Register
+# Desafio Técnico Desenvolvedor Back-End Estagiário
+
+## Django Login & Register
 
 Este projeto é uma aplicação Django que implementa um sistema de autenticação com telas de Login, Registro e um Menu simples.
 
